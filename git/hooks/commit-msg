@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# All commit messages follow Magento commit requirements
+
+if !(echo `cat "$1"` | grep -Pq "(^\w+-\d+): .+"); then
+        echo "[MAGENTO POLICY] Wrong commit message"
+        exit 1
+fi
