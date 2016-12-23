@@ -2,7 +2,7 @@
 #
 # All commit messages follow Magento commit requirements
 
-if !(echo `cat "$1"` | grep -Pq "(^\w+-\d+): .+"); then
+if !(echo `cat "$1"` | grep -Eq "(^[[:alpha:]]+-[[:digit:]]+):[[:space:]][[:alpha:]]+"); then
         echo "[MAGENTO POLICY] Wrong commit message"
         exit 1
 fi
