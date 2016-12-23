@@ -5,3 +5,4 @@
 * For UNIX systems users, hook files must be executable (chmod +x <hook_file>)
 * [Git Hooks documentation](https://git-scm.com/book/ch8-3.html)
 * Regular expression is similar as in [qa-portal](https://github.com/magento-qmt/qa-portal/blob/develop/lib/Magento/GitHub/Checklist.php#L177)
+* Regular expression use [POSIX Extended Regular Expression (ERE)](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions) syntax
