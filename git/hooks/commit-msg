@@ -2,7 +2,7 @@
 #
 # All commit messages follow Magento commit requirements
 
-if !(echo `cat "$1"` | grep -Eq "(^[[:alpha:]]+-[[:digit:]]+):[[:space:]](\[|[[:alpha:]])+"); then
+if !(echo `cat "$1"` | grep -Eq "(^MAGETWO-[[:digit:]]{5}):[[:space:]]{1}(\[|[[:alpha:]])+"); then
         echo "[MAGENTO POLICY] Wrong commit message"
         exit 1
 fi
